@@ -1,0 +1,15 @@
+diff --git a/routes/web.php b/routes/web.php
+index fddbaba..e552574 100644
+--- a/routes/web.php
++++ b/routes/web.php
+@@ -7,6 +7,10 @@
+     return Inertia::render('Welcome');
+ })->name('home');
+ 
++Route::get('/test', function () {
++    return Inertia::render('Welcome');
++})->name('home');
++
+ Route::get('dashboard', function () {
+     return Inertia::render('Dashboard');
+ })->middleware(['auth', 'verified'])->name('dashboard');
